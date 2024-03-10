@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Rezept für Pfannkuchen</h1>
+
+    <button onclick="addAll()">Zutaten laden</button>
+    <br><br>
+    <button onclick="addIngredient('300g', 'Mehl')">Zutat 1</button>
+    <button onclick="addIngredient('1 EL', 'Zucker')">Zutat 2</button>
+    <button onclick="addIngredient('3L', 'Milch')">Zutat 3</button>
+    <table id="table">
+        <tr>
+            <th>Menge</th>
+            <th>Zutat</th>
+        </tr>
+    </table>
+    <br>
+    <h4>Eigene Zutaten hinzufügen</h4>
+    <table>
+        <tr>
+            <th>
+                <label for="customAmount">Menge</label>
+            </th>
+            <th>
+                <label for="customIngredient">Zutat</label>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input placeholder="Menge eingeben" id="customAmount" type="text">
+            </td>
+            <td>
+                <input placeholder="Zutat eingeben" id="customIngredient" type="text">
+            </td>
+        </tr>
+    </table>
+    <button id="addCustom" onclick="addCustom()">Hinzufügen!</button>
+    <script>
+    </script>
+</body>
+
+</html>
